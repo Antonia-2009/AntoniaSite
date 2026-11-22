@@ -9,13 +9,5 @@
     width: 100%;
     height: 450px;
     object-fit: contain;
-    background-color: #ff00b3;
-}
-.fg-primary {
-  --bs-fg: var(--bs-primary-fg);
-  color: var(--bs-fg);
-}
-.bg-muted-danger {
-  --bs-bg: var(--bs-danger-bg-mutado);
-  background-color: var(--bs-bg);
+    background-color: #f2b4bd;
 }

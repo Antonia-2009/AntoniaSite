@@ -7,6 +7,202 @@
     <title>Meu site</title>
 
     <!-- Bootstrap -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 </head>
+
+<body class="bg-white">
+
+    <!-- Menu de navegação -->
+    <nav class="navbar navbar-expand-lg bg-danger-subtle">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="../img/Gemini_Generated_Image_rv3lwxrv3lwxrv3l.jpg" alt="Logo" width="50" height="50"
+                    class="me-2">
+                <span class="text-danger-emphasis fw-bold">Antonia</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Menu sanduiche-->
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-danger-emphasis" href="../index.html" target="_blank">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="contato" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9 col-lg-7">
+
+                    <div class="card border-0 shadow-sm rounded-5 overflow-hidden">
+
+                        <!-- Cabeçalho do Card -->
+                        <div class="card-header bg-danger-subtle text-danger-emphasis text-center py-4 border-0">
+                            <h2 class="fw-bold mb-1">Envie suas recomendações</h2>
+                            <p class="text-secondary mb-0">
+                                Deixe a sua avaliação sobre o meu site, e se quiser, deixe recomedações de livros,
+                                séries e filmes.
+                            </p>
+                        </div>
+
+                        <!-- Formulário com validação-->
+                        <div class="card-body bg-white p-4 p-md-5">
+                            <form class="was-validated">
+
+                                <!-- Campo 1: Nome completo -->
+                                <div class="mb-3">
+                                    <label for="nomeCompleto" class="form-label fw-semibold text-danger-emphasis">
+                                        Nome completo
+                                    </label>
+                                    <input type="text" class="form-control rounded-3" id="nomeCompleto"
+                                        placeholder="Digite seu nome completo" minlength="3" required>
+                                    <div class="valid-feedback">
+                                        Nome completo válido!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Por favor, informe seu nome completo (mínimo de 3 caracteres).
+                                    </div>
+                                </div>
+
+                                <!-- Campo 2: E-mail -->
+                                <div class="mb-3">
+                                    <label for="emailUsuario" class="form-label fw-semibold text-danger-emphasis">
+                                        E-mail
+                                    </label>
+                                    <input type="email" class="form-control rounded-3" id="emailUsuario"
+                                        placeholder="nome@exemplo.com" required>
+                                    <div class="valid-feedback">
+                                        E-mail válido!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Por favor, digite um endereço de e-mail válido (com @).
+                                    </div>
+                                </div>
+
+                                <!-- Campo 3: Caixa de texto para recomendações -->
+                                <div class="mb-4">
+                                    <label for="caixaRecomendacoes" class="form-label fw-semibold text-danger-emphasis">
+                                        Recomendações
+                                    </label>
+                                    <textarea class="form-control rounded-3" id="caixaRecomendacoes" rows="4"
+                                        placeholder="Escreva aqui suas recomendações de filmes, livros, estudos ou dicas para o site..."
+                                        minlength="10" required></textarea>
+                                    <div class="valid-feedback">
+                                        Recomendação preenchida!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Por favor, escreva uma recomendação com pelo menos 10 caracteres.
+                                    </div>
+                                </div>
+
+                                <!-- Botões -->
+                                <button type="button" class="btn btn-danger rounded-pill px-4 fw-semibold"
+                                    data-bs-toggle="modal" data-bs-target="#modalEnvioSucesso">
+                                    Enviar recomendação
+                                </button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- MODAL COM MENSAGEM DE ENVIO -->
+    <div class="modal fade" id="modalEnvioSucesso" tabindex="-1" aria-labelledby="modalEnvioTitulo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+
+                <div class="modal-header bg-danger-subtle text-danger-emphasis border-0">
+                    <h5 class="modal-title fw-bold" id="modalEnvioTitulo">Mensagem enviada!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body text-center p-4">
+                    <div class="alert alert-success rounded-4 mb-3" role="alert">
+                        <strong>Recomendação enviada com sucesso!</strong>
+                    </div>
+                    <p class="text-secondary mb-0">
+                        Obrigada por preencher o formulário e compartilhar suas dicas comigo!
+                    </p>
+                </div>
+
+                <div class="modal-footer border-0 justify-content-center pb-4">
+                    <button type="button" class="btn btn-danger rounded-pill px-4" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="bg-danger-subtle text-danger-emphasis border-top border-danger-subtle mt-5 pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Coluna 1: Identidade e resumo -->
+                <div class="col-12 col-md-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="../img/Gemini_Generated_Image_rv3lwxrv3lwxrv3l.jpg" alt="Logo Antonia" width="45"
+                            height="45" class="rounded-circle me-2">
+                        <span class="fs-5 fw-bold">Antonia Mazurkevicz</span>
+                    </div>
+                    <p class="text-secondary small mb-3">
+                        Estudante do Técnico em Manutenção e Suporte em Informática integrado ao Ensino Médio no
+                        IFRS – Campus Sertão e apaixonada pela língua inglesa.
+                    </p>
+                    <span class="badge rounded-pill text-bg-danger">IFRS – Campus Sertão</span>
+                    <span class="badge rounded-pill bg-white text-danger-emphasis border border-danger-subtle">Inglês
+                        • CCAA</span>
+                </div>
+
+                <!-- Coluna 2: Links de navegação -->
+                <div class="col-6 col-md-3">
+                    <h6 class="fw-bold text-uppercase mb-3">Navegação</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <a href="#inicio" class="text-decoration-none text-danger-emphasis">Início</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#sobre" class="text-decoration-none text-danger-emphasis">Sobre mim</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#gosto" class="text-decoration-none text-danger-emphasis">Formação</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#habilidades" class="text-decoration-none text-danger-emphasis">Habilidades</a>
+                        </li>
+                        <li>
+                            <a href="#contato" class="text-decoration-none text-danger-emphasis">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr class="border-danger-subtle my-4">
+
+            <!-- Linha inferior de direitos autorais -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center small text-secondary">
+                <span>&copy; 2026 Antonia Carla Viana Mazurkevicz. Todos os direitos reservados.</span>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
 </html>
